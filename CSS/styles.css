@@ -1,0 +1,67 @@
+.background {
+    display: grid;
+    grid-template-rows: 2fr 8fr;
+    height: 100vh;
+    margin: 0;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 2fr 4fr 4fr;
+    background-color: black;
+    grid-row: 1;
+}
+
+.icone {
+    grid-column: 1;
+    height: 110px;
+    width: 110px;
+    justify-self: start;
+    align-self: center;
+    margin-left: 25px;
+}
+
+.nome {
+    color: white;
+    grid-column: 2;
+    justify-self: start;
+    align-self: center;
+    font-size: 50px;
+    margin: 0;
+
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.icone:hover {
+    animation: icone 3s linear infinite;
+}
+
+@keyframes icone {
+    50% {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+}
+
+.botoes {
+    grid-column: 3;
+    justify-self: end;
+    align-self: self-end;
+}
+
+.interacoes {
+    height: 50px;
+    width: 120px;
+    font-size: 100%;
+    margin: 0;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin-bottom: 2px;
+    border: none;
+}
+
+.interacoes:hover {
+    border-bottom: 5px solid white;
+}
