@@ -73,3 +73,41 @@
 .ativo {
     border-bottom: 5px solid white;
 }
+
+.corpo{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+
+.produto-inicial {
+    width: 800px;
+    grid-column: 1;
+
+}
+
+.titulo-produto {
+    grid-column: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.botao-produto{
+    grid-column: 2;
+    border-radius: 50px;
+    width: 200px;
+
+    border: none;
+
+    color: white;
+    background-color: black;
+    font-size: 100%;
+    margin: 5px;
+}
+
+.botao-produto:hover{
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+
+}
