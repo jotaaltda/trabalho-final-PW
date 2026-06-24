@@ -68,6 +68,7 @@
 
 .interacoes:hover {
     border-bottom: 5px solid white;
+    transition: 0.5s;
 }
 
 .ativo {
@@ -76,26 +77,29 @@
 
 .corpo{
     display: grid;
-    grid-template-columns: 4fr 6fr;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto auto auto 1fr;
 }
 
 .produto-inicial {
-    width: 800px;
-    grid-column: 1;
+    width: 600px;
+    grid-column: 1 / 5;
+    grid-row: 1 / 10;
 
 }
 
 .titulo-produto {
-    grid-column: 2;
+    grid-column: 5 / 10;
+    grid-row: 1;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .botao-produto{
-    grid-column: 2;
     border-radius: 50px;
     width: 200px;
+    height: 50px;
 
     border: none;
 
@@ -106,8 +110,31 @@
 }
 
 .botao-produto:hover{
+    transition: 0.5s;
     color: black;
     background-color: white;
     border: 3px solid black;
+    box-shadow: 5px 5px 10px gray;
 
+}
+
+.saiba-mais{
+    grid-row: 3;
+    grid-column: 5;
+    margin-left: 0px;
+    align-self: start;
+}
+
+.comprar{
+    grid-row: 3;
+    grid-column: 6;
+}
+
+.descricao-produto{
+    grid-column: 5 / 8;
+    grid-row: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: start;
 }
