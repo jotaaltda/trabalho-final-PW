@@ -3,6 +3,10 @@
 <head>
     <title> Future Inc. </title>
     <link rel="icon" href="../Imagens/icon.png" type="image/png">
+
+    <!-- ADICIONA FRAMEWORK (BOOTSTRAP) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../CSS/styles.css">
 
     <!-- IMPORTA A FONTE DO GOOGLE FONTS -->
@@ -25,7 +29,51 @@
     </div>
 
     <div class="corpo">
+        <div class="container py-5" style="grid-column: 1 / -1;">
+
+            <h1 class="text-center mb-5" style="font-family: 'Major Mono Display', monospace;">CONTATO</h1>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nome</label>
+                        <input type="text" class="form-control border-dark" placeholder="Seu nome completo">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">E-mail</label>
+                        <input type="email" class="form-control border-dark" placeholder="seu@email.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Assunto</label>
+                        <input type="text" class="form-control border-dark" placeholder="Assunto da mensagem">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">Mensagem</label>
+                        <textarea class="form-control border-dark" rows="5"
+                            placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+
+                    <button class="botao-produto w-100">ENVIAR MENSAGEM</button>
+
+                </div>
+
+                <div class="col-md-4 offset-md-1">
+                    <h4 class="mb-4">Outras formas de contato</h4>
+                    <p><strong>Endereço:</strong><br>Rua Lorem Ipsum, 123 — Divinópolis, MG</p>
+                    <p><strong>Telefone:</strong><br>(37) 99999-9999</p>
+                    <p><strong>E-mail:</strong><br>contato@futureinc.com</p>
+                    <p><strong>Horário de atendimento:</strong><br>Segunda a sexta, das 8h às 18h</p>
+                </div>
+
+            </div>
+        </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
