@@ -138,3 +138,30 @@
     font-weight: bold;
     align-self: start;
 }
+
+.slide-conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.slide-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.slide-texto .botao-produto {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
